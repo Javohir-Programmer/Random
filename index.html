@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: black;
+        }
+        .container{
+            margin: auto;
+            max-width: 70%;
+            height: auto;
+            border: 3px solid black;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            box-sizing: border-box;
+            background: linear-gradient(45deg, red, blue);
+        }
+        .container-one{
+            width: 55%;
+            border: 2px solid black;
+            align-items: center;
+            display: flex;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: white;
+        }
+        .container-one h1{
+            font-size: 50px;
+        }
+        .container-two{
+            width: 35%;
+            border: 2px solid black;
+            padding: 20px;
+            align-items: center;
+            border-radius: 20px;
+            background-color: white;
+
+        }
+        .container-two h1{
+            color: black;
+            font-family: serif;
+            font-size: 40px;
+        }
+        .container-two input{
+            width: 50%;
+            height: 30px;
+            /* border-radius: 6px; */
+            border: none;
+            border-bottom: 2px solid black;
+            font-size: 25px;
+        }
+        button{
+            display: block  ;
+            width: 70%;
+            margin: auto;
+            height: 50px;
+            border-radius: 10px;
+            border: none;
+            background: linear-gradient(45deg, red, blue);
+            color: white;
+            font-size: 25px;
+        }
+
+
+        @media screen and (max-width: 800px) {
+            .container{
+                max-width: 90%;
+                display: block;
+                box-sizing: border-box;
+            }
+            .container-one{
+                display: block;
+                width: 90%;
+                margin: auto;
+            }
+
+            .container-two{
+                display: block;
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+            .container{
+                max-width: 90%;
+            }
+            
+            .container-one{
+                width: 80%;
+                margin: 20px 0;
+            }
+
+            .container-two{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <br><br><br><br>
+    <div class="container">
+        <div class="container-one">
+            <h1 id="h1"></h1>
+        </div>
+        <div class="container-two">
+            <h1>Minimum</h1>
+            <input id="input1" type="number">
+            <br><br>
+            <hr>
+            <h1>Maximum</h1>
+            <input id="input2" type="number">
+            <br><br>
+        </div>
+    </div>
+    <br><br>
+    <button id="btn">Create</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
